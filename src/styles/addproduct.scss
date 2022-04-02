@@ -1,0 +1,85 @@
+.ap-container {
+    height: 100vh;
+    padding: 0 5%;
+
+    .ap-body {
+        margin: 2vh 0;
+        height: 74vh;
+        overflow-y: auto;
+        display: flex;
+
+        form {
+            width: 50%;
+            padding: 40px 0 ;
+            align-self: center;
+            .alert {
+                min-width: 400px;
+                width: fit-content;
+                height: 40px;
+                padding: 7px 20px;
+                margin: auto;
+                
+            }
+
+            .input-wrapper {
+                width: 400px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                margin: 15px auto ;
+                
+                label {
+                    flex-grow: 1;
+                }
+                input , select {
+                    width: 70%;
+                    height: 100%;
+                    padding-left: 10px;
+                    background: #3332;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .helper-text {
+                width: 400px;
+                margin: auto;
+                color: #258;
+                
+            }
+        }
+        .logo {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            font-weight: bold;
+            
+        }
+
+    }
+
+}
+@media (max-width: 900px) {
+    form {
+        width: 100%;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .alert {
+        min-width: 320px;
+        max-width: 98%;
+        min-height: 40px;
+        height: fit-content;
+    }
+    .input-wrapper {
+        width: 320px;
+    }
+    .helper-text {
+        width: 320px;
+    }
+}

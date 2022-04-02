@@ -1,0 +1,14 @@
+{
+    "name": "scandiweb/test",
+    "authors": [
+        {
+            "name": "soufyane bk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./"
+        }
+    },
+    "require": {}
+}

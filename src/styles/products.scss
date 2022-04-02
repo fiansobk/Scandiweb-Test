@@ -1,0 +1,63 @@
+.p-container {
+    height: 100vh;
+    padding: 0 5%;
+    .p-body {
+        padding: 20px 10px;
+        margin: 2vh 0;
+        height: 74vh;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7vh 6.66%;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #0006; 
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: rgba(34, 38, 78, 0.582); 
+          border-radius: 5px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+          background: rgba(34, 38, 78, 0.7); ; 
+        }
+        .product-wrapper {
+            position: relative;
+            height: 30vh;
+            min-width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #333;
+            transition: .2s ease-in;
+            cursor: pointer;
+            @media (max-width: 640px) {
+                min-width: 100%;
+            }
+            &:hover, &.selected {
+                background: #0001;
+            }
+            p {
+                margin: 0;
+            }
+            input {
+                position: absolute;
+                top: 10%;
+                left: 10%;
+                transform: scale(1.5);
+            }
+
+        }
+        .p-message {
+            width: 100%;
+            align-self: center;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    
+}

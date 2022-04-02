@@ -1,0 +1,31 @@
+.header  {
+  height: 13vh;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #3338;
+  @media (max-width: 640px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .buttons-wrapper {
+    @media (max-width: 640px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .btn {
+        margin-left: 20px;
+        padding: 0 40px;
+        height: 40px;
+        @media (max-width: 640px) {
+          margin-left: 5px;
+        }
+    }
+  }
+}
+.footer {
+  height: 7vh;
+  border-top: 2px solid #3338;
+  line-height: 7vh;
+}

@@ -1,0 +1,5 @@
+RewriteEngine ON
+
+RewriteRule ^([a-zA-Z]*)$ index.php?url=$1
+
+Header set Access-Control-Allow-Origin "*"
